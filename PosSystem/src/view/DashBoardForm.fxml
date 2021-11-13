@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="633.0" prefWidth="1127.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <Pane layoutX="5.0" layoutY="12.0" prefHeight="27.0" prefWidth="1113.0" style="-fx-background-color: linear-gradient(to right top, #9664bc, #9373cb, #9082d9, #8d91e6, #8a9ff1, #77adfa, #66bbfe, #5bc7ff, #42d5ff, #31e3ff, #39effb, #54fbf1);;" styleClass="text-field" stylesheets="@../values/style.css">
+         <rotationAxis>
+            <Point3D x="50.0" y="50.0" />
+         </rotationAxis>
+      </Pane>
+      <AnchorPane fx:id="maincontext" layoutX="238.0" layoutY="54.0" prefHeight="567.0" prefWidth="871.0" style="-fx-background-color: #ffffff;" />
+      <AnchorPane layoutX="-13.0" layoutY="49.0" prefHeight="591.0" prefWidth="219.0" style="-fx-background-color: #f0f0f5;" stylesheets="@../values/style.css">
+         <children>
+            <ImageView blendMode="MULTIPLY" fitHeight="576.0" fitWidth="225.0" layoutX="10.0" layoutY="-375.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/Capture.PNG" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="MULTIPLY" fitHeight="483.0" fitWidth="225.0" layoutX="11.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../asset/Capture.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="27.0" layoutX="18.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/purchase_order_100px.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="24.0" layoutY="60.0" mnemonicParsing="false" onAction="#OpenCustomer" prefHeight="53.0" prefWidth="181.0" styleClass="transparent" stylesheets="@../values/style.css" text="      CUSTOMERS">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="218.0" mnemonicParsing="false" onAction="#openOrder" prefHeight="53.0" prefWidth="166.0" styleClass="transparent" stylesheets="@../values/style.css" text=" ORDER TABLE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="305.0" mnemonicParsing="false" onAction="#openOrderDetails" prefHeight="53.0" prefWidth="192.0" styleClass="transparent" stylesheets="@../values/style.css" text="PLACE ORDER">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="31.0" fitWidth="27.0" layoutX="23.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/customer_64px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="27.0" layoutX="23.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/shopping_cart_64px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="27.0" layoutX="23.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/show_property_64px.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="-21.0" layoutY="458.0" mnemonicParsing="false" onAction="#logoutMainPage" prefHeight="46.0" prefWidth="205.0" style="-fx-background-color: linear-gradient(to right top, #9664bc, #9373cb, #9082d9, #8d91e6, #8a9ff1, #77adfa, #66bbfe, #5bc7ff, #42d5ff, #31e3ff, #39effb, #54fbf1);;" stylesheets="@../values/style.css" text="LOGOUT" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="23.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="transparent" />
+                  <String fx:value="text-field" />
+               </styleClass>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="134.0" mnemonicParsing="false" onAction="#OpenOrderDetails" prefHeight="53.0" prefWidth="181.0" styleClass="transparent" stylesheets="@../values/style.css" text="ORDER DETAILS">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

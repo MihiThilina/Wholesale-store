@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="567.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustormerFormController">
+   <children>
+      <Label layoutX="109.0" layoutY="94.0" />
+      <Button layoutX="640.0" layoutY="34.0" mnemonicParsing="false" onAction="#updateCustormer" prefHeight="0.0" prefWidth="183.0" style="-fx-background-color: linear-gradient(to right top, #2283c2, #217cbe, #2276ba, #246fb5, #2768b0);;" styleClass="text-field" stylesheets="@../values/style.css" text="Update" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="641.0" layoutY="98.0" mnemonicParsing="false" onAction="#deleteCustomer" prefHeight="17.0" prefWidth="183.0" style="-fx-background-color: linear-gradient(to right top, #eb3030, #f02929, #f62121, #fa1817, #ff0909);;" styleClass="text-field" stylesheets="@../values/style.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSave" layoutX="644.0" layoutY="171.0" mnemonicParsing="false" onAction="#SaveCustomer" prefHeight="17.0" prefWidth="183.0" style="-fx-background-color: linear-gradient(to right top, #30eb30, #38eb2a, #3feb24, #45eb1c, #4beb12);;" styleClass="text-field" stylesheets="@../values/style.css" text="Save" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblCustomer" layoutX="10.0" layoutY="245.0" prefHeight="306.0" prefWidth="851.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="68.0" text="Id" />
+          <TableColumn fx:id="colTitle" prefWidth="54.0" text="Title" />
+            <TableColumn fx:id="colCusName" prefWidth="118.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="147.0" text="Address" />
+            <TableColumn fx:id="colCity" prefWidth="140.0" text="City" />
+            <TableColumn fx:id="colProvince" prefWidth="158.0" text="Province" />
+            <TableColumn fx:id="colPostalCode" prefWidth="165.0" text="Postal Code" />
+        </columns>
+         <styleClass>
+            <String fx:value="transparent" />
+            <String fx:value="cashTenderedTextFiel" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../values/style1.css" />
+            <URL value="@../values/table.css" />
+         </stylesheets>
+      </TableView>
+      <AnchorPane layoutX="10.0" layoutY="39.0" prefHeight="38.0" prefWidth="183.0" styleClass="dashBoardTextBox" stylesheets="@../values/style1.css" />
+      <TextField fx:id="txtCusId" layoutX="18.0" layoutY="45.0" onAction="#selevctCustomerOnAction" onKeyPressed="#PressKeys" prefHeight="28.0" prefWidth="165.0" promptText="C-0001" styleClass="logInTextField" stylesheets="@../values/style1.css" />
+      <Label layoutX="24.0" layoutY="30.0" styleClass="textLabel" stylesheets="@../values/text.css" text="Customer Id" />
+      <AnchorPane layoutX="311.0" layoutY="37.0" prefHeight="38.0" prefWidth="235.0" styleClass="dashBoardTextBox" stylesheets="@../values/style1.css">
+         <children>
+            <Label layoutX="7.0" layoutY="-9.0" text="Customer Name">
+               <stylesheets>
+                  <URL value="@../values/text.css" />
+                  <URL value="@../values/style.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="textLabel" />
+                  <String fx:value="label" />
+               </styleClass></Label>
+            <TextField fx:id="txtCusName" layoutX="8.0" layoutY="5.0" onKeyPressed="#PressKeys" prefHeight="28.0" prefWidth="206.0" promptText="Thilina Bandara" styleClass="logInTextField" stylesheets="@../values/style1.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="9.0" layoutY="103.0" prefHeight="38.0" prefWidth="206.0" styleClass="dashBoardTextBox" stylesheets="@../values/style1.css">
+         <children>
+            <TextField fx:id="txtCity" layoutX="13.0" layoutY="8.0" onKeyPressed="#PressKeys" prefHeight="28.0" prefWidth="174.0" promptText="Colombo" styleClass="logInTextField" stylesheets="@../values/style1.css" />
+            <Label layoutX="9.0" layoutY="-9.0" prefHeight="17.0" prefWidth="47.0" styleClass="textLabel" stylesheets="@../values/text.css" text="City" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="232.0" layoutY="101.0" prefHeight="38.0" prefWidth="316.0" styleClass="dashBoardTextBox" stylesheets="@../values/style1.css">
+         <children>
+            <TextField fx:id="txtAddress" layoutX="13.0" layoutY="8.0" onKeyPressed="#PressKeys" prefHeight="28.0" prefWidth="295.0" promptText="Dehiwala ,N0 12" styleClass="logInTextField" stylesheets="@../values/style1.css" />
+            <Label layoutX="7.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@../values/text.css" text="Address" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="9.0" layoutY="172.0" prefHeight="38.0" prefWidth="213.0" styleClass="dashBoardTextBox" stylesheets="@../values/style1.css">
+         <children>
+            <TextField fx:id="txtProvince" layoutX="9.0" layoutY="8.0" onKeyPressed="#PressKeys" prefHeight="28.0" prefWidth="192.0" promptText="Westen" styleClass="logInTextField" stylesheets="@../values/style1.css" />
+            <Label layoutX="7.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@../values/text.css" text="Province" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="233.0" layoutY="170.0" prefHeight="40.0" prefWidth="316.0" styleClass="dashBoardTextBox" stylesheets="@../values/style1.css">
+         <children>
+            <TextField fx:id="txtPostalCode" layoutX="13.0" layoutY="8.0" onKeyPressed="#PressKeys" prefHeight="28.0" prefWidth="206.0" promptText="234" styleClass="logInTextField" stylesheets="@../values/style1.css" />
+            <Label layoutX="7.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@../values/text.css" text="Postal Code" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="231.0" layoutY="36.0" prefHeight="38.0" prefWidth="72.0" styleClass="dashBoardTextBox" stylesheets="@../values/style1.css">
+         <children>
+            <TextField fx:id="txtTitle" layoutX="6.0" layoutY="8.0" onKeyPressed="#PressKeys" prefHeight="28.0" prefWidth="59.0" promptText="Mr" styleClass="logInTextField" stylesheets="@../values/style1.css" />
+            <Label layoutX="2.0" layoutY="-9.0" prefHeight="17.0" prefWidth="40.0" styleClass="textLabel" stylesheets="@../values/text.css" text="Title" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

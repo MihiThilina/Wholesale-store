@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="488.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AllDetailsController">
+   <children>
+      <Pane layoutX="52.0" layoutY="22.0" prefHeight="183.0" prefWidth="188.0" styleClass="anchorpanePPiii" stylesheets="@../values/style.css">
+         <children>
+            <Label fx:id="txtIncome" contentDisplay="CENTER" layoutX="25.0" layoutY="95.0" prefHeight="57.0" prefWidth="133.0">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Text layoutX="31.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daily Income" wrappingWidth="146.13671875">
+               <font>
+                  <Font size="21.0" />
+               </font></Text>
+         </children>
+      </Pane>
+      <Pane layoutX="262.0" layoutY="22.0" prefHeight="183.0" prefWidth="188.0" styleClass="anchorpanePPiii" stylesheets="@../values/style.css">
+         <children>
+            <Label fx:id="txtMovable" contentDisplay="CENTER" layoutX="28.0" layoutY="95.0" prefHeight="57.0" prefWidth="133.0">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Text layoutX="25.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movable Item" wrappingWidth="146.13671875">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="493.0" layoutY="22.0" prefHeight="183.0" prefWidth="188.0" styleClass="anchorpanePPiii" stylesheets="@../values/style.css">
+         <children>
+            <Label fx:id="txtLeast" contentDisplay="CENTER" layoutX="28.0" layoutY="93.0" prefHeight="57.0" prefWidth="133.0" />
+            <Text layoutX="42.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="least Item" wrappingWidth="113.13671875">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

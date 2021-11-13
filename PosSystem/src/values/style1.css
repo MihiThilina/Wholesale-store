@@ -1,0 +1,121 @@
+.paneStyle{
+    -fx-background-radius: 140;
+    -fx-background-color: linear-gradient(from 10% 10% to 50% 50%, #74b9ff/*#00CFFF*/ , #a29bfe /*#BB00FF*/);
+}
+.logInField{
+    -fx-background-color:rgba(0,0,0,0.1);
+    -fx-border-color: null;
+}
+.logInTextField{
+    -fx-background-color: transparent;
+}
+
+.logInButton{
+    -fx-background-radius: 10;
+    -fx-background-color: linear-gradient(from 10% 10% to 50% 50%, #74b9ff/*#00CFFF*/ , #a29bfe /*#BB00FF*/);
+}
+
+.loadingBall{
+    -fx-fill: linear-gradient(from 10% 10% to 50% 50%, #74b9ff/*#00CFFF*/ , #a29bfe /*#BB00FF*/);
+}
+
+.dashBoardSideMenu{
+    -fx-background-radius: 10;
+}
+.dashBoardTextBox{
+    -fx-background-color: transparent;
+    /*-fx-border-color: rgba(0, 0, 0,0.3);*/
+    -fx-border-color: linear-gradient(from 10% 10% to 50% 50%, rgba(116, 185, 255, 0.6), rgba(162, 155, 254, 0.6));
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+
+.trackingCover{
+    -fx-border-color: linear-gradient(from 10% 10% to 50% 50%, #74b9ff/*#00CFFF*/ , #a29bfe /*#BB00FF*/);
+    -fx-border-radius: 0 0 30 30;
+    -fx-border-width: 3;
+}
+
+.topBar{
+    -fx-background-radius: 10;
+    -fx-background-color: linear-gradient(from 10% 10% to 50% 50%, #74b9ff/*#00CFFF*/ , #a29bfe /*#BB00FF*/);
+}
+
+.combo-box{
+    -fx-background-color: transparent;
+    -fx-border-radius: 10;
+    -fx-border-color: linear-gradient(from 10% 10% to 50% 50%, rgba(116, 185, 255, 0.6), rgba(162, 155, 254, 0.6));
+    -fx-border-width: 2;
+    -fx-font-family: Poppins;
+    -fx-prompt-text-fill: rgba(0,0,0,0.3);
+
+}
+
+.summeryScroll {
+    -fx-background: #FFFFFF;
+    -fx-border-color: #FFFFFF;
+}
+
+.text-area{
+    -fx-background-color: white;
+    -fx-focus-traversable: false;
+    -fx-text-fill: rgba(0,0,0,0.5);
+}
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+.text-area .scroll-bar:vertical {
+    -fx-pref-width: 1;
+    -fx-opacity: 0;
+}
+.text-area .scroll-bar:horizontal {
+    -fx-pref-height: 1;
+    -fx-opacity: 0;
+}
+.packageTypeButton {
+    -fx-background-color: #ecf0f1;
+    -fx-background-radius: 10;
+    -fx-border-color: linear-gradient(from 10% 10% to 50% 50%, rgba(116, 185, 255, 1), rgba(162, 155, 254, 1));
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+
+.datePane{
+    /*-fx-background-color: cornflowerblue;*/
+        -fx-background-color: linear-gradient(from 10% 10% to 50% 50%, #74b9ff, #a29bfe);
+    -fx-background-radius: 10;
+}
+
+.additionalServiceBoarder{
+    -fx-border-radius: 10;
+    -fx-border-color: rgba(0,0,0,0.5);
+    -fx-border-width: 2;
+}
+
+.costScrollPane{
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color:  rgba(0,0,0,0.3);
+}
+/*To disappear Scroll Pane Blue Focus Traveler Boarder*/
+
+.scroll-pane:focused {
+    -fx-background-insets: 0;
+}
+
+/*====================================================*/
+.costScroll {
+    -fx-background: null;
+    -fx-border-color: transparent;
+}
+
+.cashTenderedTextFiel{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+}
+
+.payNowButton{
+    -fx-background-color: #2980b9;
+    -fx-background-radius: 10;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemFormController">
+   <children>
+      <Button layoutX="312.0" layoutY="180.0" mnemonicParsing="false" onAction="#SaveItem" prefHeight="17.0" prefWidth="174.0" style="-fx-background-color: linear-gradient(to right top, #30eb30, #38eb2a, #3feb24, #45eb1c, #4beb12);;" styleClass="text-field" stylesheets="@../values/style.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="641.0" layoutY="36.0" mnemonicParsing="false" onAction="#updateItem" prefHeight="44.0" prefWidth="174.0" style="-fx-background-color: linear-gradient(to right top, #2283c2, #217cbe, #2276ba, #246fb5, #2768b0);;" styleClass="text-field" stylesheets="@../values/style.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="641.0" layoutY="111.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="44.0" prefWidth="174.0" style="-fx-background-color: linear-gradient(to right top, #eb3030, #f02929, #f62121, #fa1817, #ff0909);;" styleClass="text-field" stylesheets="@../values/style.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblItem" layoutX="19.0" layoutY="253.0" prefHeight="296.0" prefWidth="835.0" stylesheets="@../values/table.css">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="146.0" text="Item Code" />
+          <TableColumn fx:id="colDescription" prefWidth="205.0" text="Description" />
+            <TableColumn fx:id="colPackSize" prefWidth="149.0" text="Pack Size" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="180.0" text="Unit Price" />
+            <TableColumn fx:id="colQnt" prefWidth="154.0" text="Qty On Hand" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="20.0" layoutY="38.0" prefHeight="38.0" prefWidth="232.0" styleClass="dashBoardTextBox" stylesheets="@../values/style1.css">
+         <children>
+            <Label layoutX="6.0" layoutY="-9.0" prefHeight="17.0" prefWidth="104.0" styleClass="textLabel" stylesheets="@../values/text.css" text="Item Code" />
+            <TextField fx:id="txtitemCode" layoutX="10.0" layoutY="8.0" onAction="#ItemCodeOnAction" onKeyPressed="#PressKeys" prefHeight="28.0" prefWidth="174.0" promptText="I-001" styleClass="logInTextField" stylesheets="@../values/style1.css" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="19.0" layoutY="113.0" prefHeight="40.0" prefWidth="232.0" styleClass="dashBoardTextBox" stylesheets="@../values/style1.css">
+         <children>
+            <TextField fx:id="txtPacksize" layoutX="13.0" layoutY="8.0" onKeyPressed="#PressKeys" prefHeight="28.0" prefWidth="174.0" promptText="122" styleClass="logInTextField" stylesheets="@../values/style1.css" />
+            <Label layoutX="9.0" layoutY="-9.0" prefHeight="17.0" prefWidth="69.0" styleClass="textLabel" stylesheets="@../values/text.css" text="Pack Size" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="273.0" layoutY="37.0" prefHeight="40.0" prefWidth="256.0" styleClass="dashBoardTextBox" stylesheets="@../values/style1.css">
+         <children>
+            <TextField fx:id="txtDescription" layoutX="13.0" layoutY="8.0" onKeyPressed="#PressKeys" prefHeight="28.0" prefWidth="193.0" promptText="Age gana Saban" styleClass="logInTextField" stylesheets="@../values/style1.css" />
+            <Label layoutX="11.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@../values/text.css" text="Description" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="19.0" layoutY="182.0" prefHeight="40.0" prefWidth="232.0" styleClass="dashBoardTextBox" stylesheets="@../values/style1.css">
+         <children>
+            <TextField fx:id="txtQty" layoutX="9.0" layoutY="8.0" onKeyPressed="#PressKeys" prefHeight="28.0" prefWidth="192.0" promptText="000" styleClass="logInTextField" stylesheets="@../values/style1.css" />
+            <Label layoutX="7.0" layoutY="-9.0" prefHeight="17.0" prefWidth="119.0" styleClass="textLabel" stylesheets="@../values/text.css" text="Qty On Hand" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="277.0" layoutY="113.0" prefHeight="40.0" prefWidth="256.0" styleClass="dashBoardTextBox" stylesheets="@../values/style1.css">
+         <children>
+            <TextField fx:id="txtPrice" layoutX="13.0" layoutY="8.0" onKeyPressed="#PressKeys" prefHeight="28.0" prefWidth="206.0" promptText="45.00" styleClass="logInTextField" stylesheets="@../values/style1.css" />
+            <Label layoutX="7.0" layoutY="-9.0" styleClass="textLabel" stylesheets="@../values/text.css" text="Unit Price" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

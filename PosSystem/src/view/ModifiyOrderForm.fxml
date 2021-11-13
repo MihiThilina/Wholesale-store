@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="424.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifiyOrderFormController">
+   <children>
+      <Pane prefHeight="488.0" prefWidth="741.0" style="-fx-background-color: 000000;" styleClass="border" stylesheets="@../values/style.css">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="441.0" layoutY="347.0" onAction="#SaveOrder" prefHeight="45.0" prefWidth="139.0" stylesheets="@../values/style.css" text="Save">
+               <styleClass>
+                  <String fx:value="transparent" />
+                  <String fx:value="border" />
+                  <String fx:value="right-side-background" />
+                  <String fx:value="left-side-background" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField fx:id="txtPrice" labelFloat="true" layoutX="73.0" layoutY="279.0" prefHeight="25.0" prefWidth="232.0" promptText="Price" />
+            <JFXTextField fx:id="txtOrderQty" labelFloat="true" layoutX="73.0" layoutY="207.0" prefHeight="25.0" prefWidth="232.0" promptText="Order Qty" />
+            <JFXTextField fx:id="txtitemCode" labelFloat="true" layoutX="389.0" layoutY="134.0" prefHeight="25.0" prefWidth="232.0" promptText="Item Code" />
+            <JFXTextField fx:id="txtDiscount" labelFloat="true" layoutX="389.0" layoutY="207.0" prefHeight="25.0" prefWidth="232.0" promptText="Discount" />
+            <JFXTextField fx:id="txtOrderId" labelFloat="true" layoutX="73.0" layoutY="134.0" onAction="#serachOrderId" prefHeight="25.0" prefWidth="232.0" promptText="Order ID" />
+            <JFXButton buttonType="RAISED" layoutX="277.0" layoutY="347.0" onAction="#UpdateOrder" prefHeight="45.0" prefWidth="139.0" stylesheets="@../values/style.css" text="Update">
+               <styleClass>
+                  <String fx:value="transparent" />
+                  <String fx:value="border" />
+                  <String fx:value="right-side-background" />
+                  <String fx:value="left-side-background" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="567.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderDetailsFormController">
+   <children>
+      <Label layoutX="31.0" layoutY="24.0" text="Order Id :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderId" layoutX="124.0" layoutY="25.0" prefHeight="21.0" prefWidth="76.0" text="O001">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="26.0" text="Order Date :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="389.0" layoutY="23.0" prefHeight="34.0" prefWidth="144.0" text="2021-12-23">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="628.0" layoutY="25.0" text="Order Time :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="739.0" layoutY="26.0" prefHeight="27.0" prefWidth="99.0" text="10:12:35">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="705.0" layoutY="182.0" mnemonicParsing="false" onAction="#addToCartOnAction" prefHeight="42.0" prefWidth="127.0" style="-fx-background-color: linear-gradient(to right top, #30eb30, #38eb2a, #3feb24, #45eb1c, #4beb12);;" styleClass="text-field" stylesheets="@../values/style.css" text="Add to cart" />
+      <Button layoutX="572.0" layoutY="183.0" mnemonicParsing="false" onAction="#clearOnAction" prefHeight="42.0" prefWidth="110.0" style="-fx-background-color: linear-gradient(to right top, #eb3030, #f02929, #f62121, #fa1817, #ff0909);;" styleClass="text-field" stylesheets="@../values/style.css" text="Clear" />
+      <JFXComboBox fx:id="cmbCusId" labelFloat="true" layoutX="24.0" layoutY="80.0" prefHeight="25.0" prefWidth="138.0" promptText="Customer Id" stylesheets="@../values/style.css" />
+      <JFXComboBox fx:id="cmbItemId" labelFloat="true" layoutX="25.0" layoutY="130.0" prefHeight="25.0" prefWidth="138.0" promptText="Item Id" stylesheets="@../values/style.css" />
+      <JFXTextField fx:id="txtCusName" labelFloat="true" layoutX="172.0" layoutY="79.0" prefHeight="25.0" prefWidth="235.0" promptText="Customer Name" stylesheets="@../values/style.css" />
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="428.0" layoutY="77.0" prefHeight="25.0" prefWidth="198.0" promptText="Customer Address" stylesheets="@../values/style.css" />
+      <JFXTextField fx:id="txtCity" labelFloat="true" layoutX="649.0" layoutY="76.0" prefHeight="25.0" prefWidth="198.0" promptText="Custtomer City" stylesheets="@../values/style.css" />
+      <JFXTextField fx:id="txtDescription" layoutX="172.0" layoutY="130.0" prefHeight="25.0" prefWidth="235.0" promptText="Description" stylesheets="@../values/style.css" />
+      <JFXTextField fx:id="txtQty" layoutX="431.0" layoutY="129.0" prefHeight="25.0" prefWidth="198.0" promptText="qty On Hand" stylesheets="@../values/style.css" />
+      <JFXTextField fx:id="txtUnitPrice" layoutX="649.0" layoutY="129.0" prefHeight="25.0" prefWidth="198.0" promptText="Unit Price" stylesheets="@../values/style.css" />
+      <Label layoutX="23.0" layoutY="188.0" text="QTY :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQtyFild" layoutX="65.0" layoutY="185.0" stylesheets="@../values/system.css">
+         <styleClass>
+            <String fx:value="transparent" />
+            <String fx:value="border" />
+         </styleClass></TextField>
+      <Label layoutX="232.0" layoutY="186.0" prefHeight="21.0" prefWidth="76.0" text="Discount :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDiscount" layoutX="308.0" layoutY="184.0" prefHeight="25.0" prefWidth="45.0" stylesheets="@../values/system.css">
+         <styleClass>
+            <String fx:value="border" />
+            <String fx:value="transparent" />
+         </styleClass></TextField>
+      <Button layoutX="444.0" layoutY="183.0" mnemonicParsing="false" onAction="#ModifyOrder" prefHeight="42.0" prefWidth="99.0" style="-fx-background-color: linear-gradient(to right top, #2283c2, #217cbe, #2276ba, #246fb5, #2768b0);;" styleClass="text-field" stylesheets="@../values/style.css" text="Modify " />
+      <Label layoutX="362.0" layoutY="187.0" prefHeight="25.0" prefWidth="22.0" text="\%">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Pane layoutX="5.0" layoutY="482.0" prefHeight="74.0" prefWidth="856.0" styleClass="border" stylesheets="@../values/system.css">
+         <children>
+            <Pane layoutX="10.0" layoutY="-9.0" prefHeight="15.0" prefWidth="77.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Text layoutX="4.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Out" wrappingWidth="81.99998423457146">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Label layoutX="87.0" layoutY="22.0" text="Total :" textFill="#d00000">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtTtl" layoutX="159.0" layoutY="22.0" prefHeight="31.0" prefWidth="172.0" text="0.00" textFill="#d00000">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="635.0" layoutY="7.0" mnemonicParsing="false" onAction="#placeOrdercOnAction" prefHeight="54.0" prefWidth="160.0" style="-fx-background-color: linear-gradient(to right top, #30eb30, #38eb2a, #3feb24, #45eb1c, #4beb12);" styleClass="text-field" stylesheets="@../values/style.css" text="Save Order">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="15.0" layoutY="243.0" prefHeight="223.0" prefWidth="833.0" styleClass="border" stylesheets="@../values/system.css">
+         <children>
+            <Pane layoutX="13.0" layoutY="-14.0" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Text layoutX="4.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cart Table" wrappingWidth="81.99998423457146">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <TableView fx:id="tblplaceOrder" layoutX="8.0" layoutY="16.0" prefHeight="198.0" prefWidth="816.0" styleClass="transparent">
+              <columns>
+                <TableColumn fx:id="colOrderId" prefWidth="126.0" text="Order Id" />
+                <TableColumn fx:id="colItemCode" prefWidth="130.0" text="Item Code" />
+                  <TableColumn fx:id="colQty" prefWidth="128.0" text="QTY" />
+                  <TableColumn fx:id="colUnitprice" prefWidth="162.0" text="Unit Price" />
+                  <TableColumn fx:id="colDiscount" prefWidth="135.0" text="Discount" />
+                  <TableColumn fx:id="colTotal" prefWidth="134.0" text="Total" />
+              </columns>
+               <stylesheets>
+                  <URL value="@../values/style.css" />
+                  <URL value="@../values/table.css" />
+               </stylesheets>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
